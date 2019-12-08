@@ -1,0 +1,117 @@
+body, html{
+    height: 100%;
+    background-color: brown
+}
+.topnav{
+    background-color: red;
+    overflow: hidden;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    .topnav a:hover{
+        background-color: yellow;
+        color: #000
+    }
+    .topnav a.active{
+        background-color: blue;
+        color: white;
+    }
+    div.hero-image{
+        background-image: url(../img/5cc834251a5a6.png);
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    div.hero-text{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+    }
+    div.hero-text h1{
+        font-size: 3em;
+    }
+    div.hero-text a button{
+        color: white;
+        background-color: red;
+        border: red;
+        padding: 10px;
+        border-radius: 10%;
+    }
+    div.hero-text a button:hover{
+        background-color: blue;
+        color: rebeccapurple;
+    }
+    div.hero-text a button{
+        box-shadow: 2px 2px 2px rgb(4, 0, 255)
+    }
+    .decription{
+        max-width: 80%;
+        text-align: center;
+        margin: auto;
+
+    }
+    .column{
+        float: left;
+        width: 33.3%
+    }
+    .column img{
+width: 100%;
+height: auto;
+    }
+    .row{
+        text-align: center;
+        padding-bottom: 30px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    footer{
+    background-color: darkgreen;
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    footer p{
+        color: yellow;
+    }
+    @media screen and(max-width: 600px){
+
+    }
+    .topnav .icon{
+        display: none;
+    }
+    @media screen and (max-width:600px){
+        .topnav a:not(:first-child){
+            display: none;
+        }
+        .topnav a.icon{
+            float: right;
+            display: block;
+        }
+    }
+    @media screen and (max-width:600px){
+        .topnav.responsive{
+            position: relative;
+        }
+        .topnav.responsive a.icon{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
